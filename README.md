@@ -33,6 +33,10 @@ ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
+Затем надо локально создать бд
+```
+psql -U postgres -c "CREATE DATABASE picturemarket;"
+```
 ### 3. Заполнение тестовыми данными.
 
 ```powershell
