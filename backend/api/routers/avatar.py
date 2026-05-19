@@ -8,7 +8,7 @@ from pathlib import Path
 
 router = APIRouter(prefix="/avatar", tags=["avatar"])
 
-AVATAR_DIR = Path("uploads/avatar")
+AVATAR_DIR = Path(__file__).parent.parent.parent / "uploads" / "avatar"
 AVATAR_DIR.mkdir(parents=True, exist_ok=True)
 
 
